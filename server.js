@@ -16,7 +16,7 @@ app.use(cors());
 
 app.use(bodyParser.json( ));
 
-const conn = mongoose.connect("mongodb://127.0.0.1:27017/furniro").then(() => {
+const conn = mongoose.connect("mongodb+srv://dhirenpatyal7:superpassword@cluster0.jo0de.mongodb.net/").then(() => {
     console.log('MongoDB Connected');
 }).catch((err) => {
     console.error('MongoDB connection error:', err);
